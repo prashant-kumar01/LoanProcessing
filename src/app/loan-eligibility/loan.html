@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: rgb(68, 138, 208);
+      }
+      .container{
+        padding-left: 550px;
+      }
+      .form-control{
+        background-color: blanchedalmond;
+        border: none;
+        border-radius: 5px;
+        font-size: 30px;
+      }
+      .coloring{
+        font-size: 30px;
+        /* color:darkmagenta; */
+      }
+      #subm{
+        background-color: rgb(29, 181, 118) ;
+        border-radius: 5px;
+        font-size: 30px;
+        color: black;
+      }
+      .res{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        color:rgb(12, 7, 72);
+      }
+    </style>
+</head>
+<body class="container">
+    <div >
+        <label for="validationCustomUsername" class="coloring">Enter loan amount:</label>
+        <div class="input-group has-validation">
+          <input type="number" class="form-control loan" name="lamount" [(ngModel)]="lamount" id="validationCustomUsername" value="0" aria-describedby="inputGroupPrepend" required>
+        </div>
+      </div><br>
+      <div >
+          <label for="validationCustom05" class="coloring">No of years:</label><br>
+          <input type="text" class="form-control year" name="lyear" [(ngModel)]="lyear" id="validationCustom05" required>
+        </div>
+        <br>
+    <button (click)="personal()"  id="subm">Calculate</button>
+
+    <h2 class="res">Total loan amount after 6% interest is : {{result}}</h2>
+    
+</body>
+</html>

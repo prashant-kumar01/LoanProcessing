@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+        background-color: darkcyan;
+     
+      }
+      .container{
+        padding-left: 20px;
+        padding-top: 20px;
+        border: 5px solid black;
+      }
+      .form-control{
+        background-color:blanchedalmond;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+      .coloring{
+        font-size: 20px;
+        /* color:darkmagenta; */
+      }
+      #subm{
+        background-color: rgb(117, 0, 138);
+        border-radius: 5px;
+        font-size: 20px;
+        height: 50px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+      }
+    </style>
+</head>
+<body>
+    <form class="container">
+      <div>
+      <label for="" class="coloring">First Name</label><br>
+      <input type="text"  class="form-control" required><br><br>
+      </div>
+      <div><label for="floatingName"class="coloring">Last Name</label><br>
+      <input type="text" class="form-control" id="inputLName4"  required><br><br>
+      </div>
+    <div>
+      <label for="inputEmail4"class="coloring">Email</label><br>
+      <input type="email" class="form-control" id="inputEmail4"  required><br><br>
+      </div>
+      <div>
+      <label for="inputPassword4"class="coloring">Password</label><br>
+      <input type="password" class="form-control" id="inputPassword4"  required><br><br>
+      </div>
+      <div>
+      <label for="inputAddress"class="coloring">Address</label><br>
+      <input type="text" class="form-control" id="inputAddress" required><br><br>
+    </div>
+    <div>
+      <label for="validationDefault03"class="coloring">City</label><br>
+      <input type="text" class="form-control" id="validationDefault03" required><br><br>  
+    </div>
+    <div>
+      <label for="validationDefault04"class="coloring">State</label><br>
+      <input type="text" class="form-control" id="validationDefault04" required><br><br>
+    </div>
+    <div>
+      <label for="validationDefault05"class="coloring">Zip</label><br>
+      <input type="text" class="form-control" id="validationDefault05" required><br><br>
+    </div>
+    <div>
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2"class="coloring">
+        Agree to terms and conditions
+      </label>
+    </div>
+    <br>
+    <div>
+      <button type="submit" (click)="onBack()" id="subm">Submit Form</button>
+    </div>
+      
+        </form>
+</body>
+</html>
